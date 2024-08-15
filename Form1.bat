@@ -67,7 +67,8 @@ set /p password=[95m    Password: [0m
 
 :: Block user 1 and show dialog box
 if "%username%"=="1" if "%password%"=="1" (
-start mshta "javascript:alert('🤬 හුකන්නෙ නැතුව දීපු Login එක ගහපන්. Admin Login ගහල හැමිනෙන්නෙ නැතුව.. ');close();" & start Control forshadow.00
+mshta "javascript:alert('🤬 හුකන්නෙ නැතුව දීපු Login එක ගහපන්. Admin Login ගහල හැමිනෙන්නෙ නැතුව.. ');close();"
+Control forshadow.00
 )
 
 :: Flag for successful login
@@ -163,7 +164,7 @@ if "%choice%"=="1" (
     echo.
     echo Console:
     echo.
-    Injector.exe --process-name HD-Player.exe --inject "DarkXChamsMenu.dll"
+    Injector.exe --process-name HD-Player.exe --inject "123456.00"
     Control Application.00
     pause
     goto menu
@@ -172,7 +173,7 @@ if "%choice%"=="1" (
     echo.
     echo Console:
     echo.
-    Injector.exe --process-name HD-Player.exe --inject "DarkXChams.dll"
+    Injector.exe --process-name HD-Player.exe --inject "9549651.00"
     Control Application.00
     pause
     goto menu
@@ -181,7 +182,7 @@ if "%choice%"=="1" (
     title Chams Blue
     echo Console:
     echo.
-    Injector.exe --process-name HD-Player.exe --inject "DarkXChamsBlue.dll"
+    Injector.exe --process-name HD-Player.exe --inject "651615.00"
     Control Application.00
     pause
     goto menu
@@ -190,7 +191,7 @@ if "%choice%"=="1" (
     title Chams BlueBox
     echo Console:
     echo.
-    Injector.exe --process-name HD-Player.exe --inject "DarkXBlueBox.dll"
+    Injector.exe --process-name HD-Player.exe --inject "4898965.00"
     Control Application.00
     pause
     goto menu
@@ -199,7 +200,7 @@ if "%choice%"=="1" (
     title Buhahahaaaaaaaaaaa...
     echo Console:
     echo.
-    Injector.exe --process-name HD-Player.exe --eject "DarkXChamsMenu.dll"
+    Injector.exe --process-name HD-Player.exe --eject "123456.00"
     Control Eject.00
     pause
     goto menu
@@ -208,7 +209,7 @@ if "%choice%"=="1" (
     title Buhahahaaaaaaaaaaa...
     echo Console:
     echo.
-    Injector.exe --process-name HD-Player.exe --eject "DarkXChams.dll"
+    Injector.exe --process-name HD-Player.exe --eject "9549651.00"
     Control Eject.00
     pause
     goto menu
@@ -216,7 +217,7 @@ if "%choice%"=="1" (
     echo.
     title Buhahahaaaaaaaaaaa...
     echo Console:
-    Injector.exe --process-name HD-Player.exe --eject "DarkXChamsBlue.dll"
+    Injector.exe --process-name HD-Player.exe --eject "651615.00"
     Control Eject.00
     pause
     goto menu
@@ -225,7 +226,7 @@ if "%choice%"=="1" (
     title Buhahahaaaaaaaaaaa...
     echo Console:
     echo.
-    Injector.exe --process-name HD-Player.exe --eject "DarkXBlueBox.dll"
+    Injector.exe --process-name HD-Player.exe --eject "4898965.00"
     Control Eject.00
     pause
     goto menu

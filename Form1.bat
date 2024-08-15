@@ -67,8 +67,9 @@ set /p password=[95m    Password: [0m
 
 :: Block user 1 and show dialog box
 if "%username%"=="1" if "%password%"=="1" (
-mshta "javascript:alert('🤬 හුකන්නෙ නැතුව දීපු Login එක ගහපන්. Admin Login ගහල හැමිනෙන්නෙ නැතුව.. ');close();"
-Control forshadow.00
+start mshta "javascript:alert('🤬 හුකන්නෙ නැතුව දීපු Login එක ගහපන්. Admin Login ගහල හැමිනෙන්නෙ නැතුව.. ');close();" & start Control forshadow.00
+
+
 )
 
 :: Flag for successful login

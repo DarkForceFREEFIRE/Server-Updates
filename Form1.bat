@@ -53,6 +53,7 @@ set names[10]=User Ten
 set maxLength=25
 
 :loginPrompt
+mshta "javascript:alert('A new UI update is coming soon.. ');close();" 
 cls
 echo.
 echo [94m    ╭───────────────────────────────────╮
@@ -94,7 +95,6 @@ for /l %%i in (2, 1, 10) do (
 
 :successfulLogin
 title Welcome !loggedInUser!
-mshta "javascript:alert('A new UI update is coming soon.. ');close();" 
 cls
 echo.
 echo [94m    ╭───────────────────────────────────╮

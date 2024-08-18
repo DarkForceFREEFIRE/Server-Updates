@@ -53,7 +53,7 @@ set names[10]=User Ten
 set maxLength=25
 
 :loginPrompt
-mshta "javascript:alert('A new UI update is coming soon.. ');close();" 
+mshta "javascript:alert('This application will be discontinued after %00/00/0000 @00:00 AM%.. ');close();" 
 cls
 echo.
 echo [94m    ╭───────────────────────────────────╮

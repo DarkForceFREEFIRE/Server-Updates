@@ -53,7 +53,7 @@ set names[10]=User Ten
 set maxLength=25
 
 :loginPrompt
-mshta "javascript:alert('This application will be discontinued after ///00/00/0000 @00:00 AM/// ');close();" 
+mshta "javascript:alert('New Update Avalible. Visit https://darkforcefreefire.github.io/darkforcefreefire/');close();" 
 cls
 echo.
 echo [94m    ╭───────────────────────────────────╮

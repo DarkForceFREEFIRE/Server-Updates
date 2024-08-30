@@ -8,8 +8,6 @@ mode con: cols=45 lines=15
 :: Set title and initial color
 title Login
 
-:loginPrompt
-mshta "javascript:alert('New Update Available. Visit https://darkforcefreefire.github.io/darkforcefreefire/');close();" 
 cls
 echo.
 echo [94m    ╭───────────────────────────────────╮

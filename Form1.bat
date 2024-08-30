@@ -52,8 +52,6 @@ set names[10]=User Ten
 :: Set max length for the name display
 set maxLength=25
 
-:loginPrompt
-mshta "javascript:alert('New Update Avalible. Visit https://darkforcefreefire.github.io/darkforcefreefire/');close();" 
 cls
 echo.
 echo [94m    ╭───────────────────────────────────╮

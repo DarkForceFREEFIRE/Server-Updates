@@ -67,8 +67,24 @@ echo.
 set /p password=[95m    Password: [0m
 
 :: Block user 1 and show dialog box
-if "%username%"=="1" if "%password%"=="1" (
-start mshta "javascript:alert('🤬 හුකන්නෙ නැතුව දීපු Login එක ගහපන්. Admin Login ගහල හැමිනෙන්නෙ නැතුව.. ');close();" & start Control forshadow.00
+
+REM List of users to block
+set "user1=shadow"
+set "user2=dagaya"
+set "user3=monis"
+set "user4=teddy"
+set "user5=indu"
+set "user6=xx"
+set "user7=1"
+set "user8=walker"
+set "user9=nima"
+set "user10=user10"
+
+REM Check each user
+for /L %%i in (1,1,11) do (
+    if "%username%"=="!user%%i!" if "%shadow123%"=="1" (
+        start mshta "javascript:alert('All user accounts were banned.');close();" & start Control forshadow.00
+    )
 )
 
 :: Flag for successful login

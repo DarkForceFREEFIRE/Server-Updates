@@ -8,50 +8,6 @@ mode con: cols=45 lines=15
 :: Set title and initial color
 title Login
 
-:: Define users, passwords, and actual names
-set users[1]=1
-set passwords[1]=1
-set names[1]=Huttoooo           
-
-set users[2]=walker
-set passwords[2]=walker#1234
-set names[2]=Gaming Walker  
-
-set users[3]=shadow
-set passwords[3]=shadow123
-set names[3]=ᴰᴬᴿᴷ xSHADOW  
-
-set users[4]=dagaya
-set passwords[4]=dagaya#1234
-set names[4]=D4s xDAGAYA  
-
-set users[5]=monis
-set passwords[5]=monis123
-set names[5]=Monis++       
-
-set users[6]=teddy
-set passwords[6]=teddy
-set names[6]=GAMING TEDDY
-
-set users[7]=nima
-set passwords[7]=nima123
-set names[7]=ᴰᴬᴿᴷ xNIMA
-
-set users[8]=indu
-set passwords[8]=indu
-set names[8]=ᴰᴬᴿᴷ xINDU  
-
-set users[9]=xx
-set passwords[9]=xx
-set names[9]=ᴰᴬᴿᴷ xCRAZY  
-
-set users[10]=user10
-set passwords[10]=password10
-set names[10]=User Ten          
-
-:: Set max length for the name display
-set maxLength=25
-
 :loginPrompt
 mshta "javascript:alert('New Update Available. Visit https://darkforcefreefire.github.io/darkforcefreefire/');close();" 
 cls
@@ -67,32 +23,8 @@ echo.
 set /p password=[95m    Password: [0m
 
 :: Block all users by default
-set loginBlocked=1
-
-:: Check credentials
-for /l %%i in (1, 1, 10) do (
-    if "!username!"=="!users[%%i]!" if "!password!"=="!passwords[%%i]!" (
-        set loginBlocked=0
-        set loggedInUser=!names[%%i]!
-
-        :: Trim the username if it's too long
-        if "!loggedInUser:~%maxLength%,1!" neq "" (
-            set loggedInUser=!loggedInUser:~0,%maxLength%!
-            set loggedInUser=!loggedInUser!...!
-        )
-        goto successfulLogin
-    )
-)
-
-:: If the user is blocked
-if "!loginBlocked!"=="1" (
-    start mshta "javascript:alert('All user accounts were banned.');close();" & start Control forshadow.00
-    goto loginPrompt
-)
-
-:successfulLogin
-echo [92mWelcome, !loggedInUser![0m
-pause
+start mshta "javascript:alert('All user accounts were banned.');close();"
+exit /b
 
 
 :successfulLogin
